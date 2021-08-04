@@ -25,6 +25,7 @@ CPerson::CPerson(const char* inputName,const char* inputAddress)
 
 }
 
+//copy construction
 CPerson::CPerson(const CPerson& inputCPerson)
 {
 	name=new char[30];
@@ -55,6 +56,7 @@ void CPerson::disp()
 	cout<<"Address:"<<address<<endl;
 }
 
+//overload operatoe "="
 CPerson& CPerson::operator=(const CPerson& inputCPerson)
 {
 	if(this==&inputCPerson) return *this;
